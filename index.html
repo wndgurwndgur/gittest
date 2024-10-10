@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            background-image: url('img/puzzle.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat;
+        }
+        h1 {
+            position: absolute;
+            top: 200px;
+            left: 50%;
+            transform: translateX(-50%);
+            margin: 0;
+            padding: 10px;
+            font-size: 4em;
+            color: #333;
+        }
+        .center-block {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .center-block a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+        .center-block a:hover {
+            background-color: #45a049;
+        }
+
+        /* Additional styles for the container and new center blocks */
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 60%;
+            margin-top: 20px;
+        }
+        .center-block.small {
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1><span style="font-weight: bold; font-size: 80px; color: white;">Puzzled Danosaur</span></h1>
+
+    <!-- New container with three blocks -->
+    <div class="container">
+        <div class="center-block small">
+            <p>have some rest</p>
+            <a href="Mini1_Snake.html"> Mini Game</a>
+        </div>
+        <div class="center-block small">
+            <p>Come Here!</p>
+            <a href="Stage0.html">Stage0 >_o</a>
+        </div>
+        <div class="center-block small">
+            <p>The Challenger!</p>
+            <a href="challenge0.html">It won't be easy</a>
+        </div>
+    </div>
+
+    <script>
+        // Ensure redirection happens only through login.html
+        //if (document.referrer.indexOf('login.html') === -1) {
+        //    window.location.href = 'login.html';
+        //}
+    </script>
+</body>
+</html>
